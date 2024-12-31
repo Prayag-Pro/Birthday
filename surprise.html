@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Happy Birthday</title>
+</head>
+<body>
+<header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+
+            <img src="balloon.svg" height="50" width="60">
+            <a class="ml-3 text-xl" href="index.html"><b>Happy Birthday Gigi</b></a>
+        </a>
+        <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900" href="about.html">About Me</a>
+            <a class="mr-5 hover:text-gray-900" href="photos.html">My Life Photos</a>
+            <a class="mr-5 hover:text-gray-900" href="surprise.html">Surprise Page</a>
+            <a class="mr-5 hover:text-gray-900" href="credits.html">Credits !</a>
+        </nav>
+        <button onclick="location.href='personal.html'" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Personal Page
+
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+        </button>
+    </div>
+
+</header>
+<hr>
+
+
+<button type="button" id="surpriseButton" class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Click ME!</button>
+<button  id="close-button" type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Close Form</button>
+<h1 id="quote"><b> Get the chance to save your feeling this birthday by sending yourself an e-mail.<br> Hope this creates a wonderful memory!</b></h1>
+<script>
+    document.getElementById('surpriseButton').addEventListener(
+        "click",
+        function (){
+            document.getElementById("surpriseForm").style.display="block"
+            document.getElementById("close-button").style.display="block"
+            document.getElementById("quote").style.display="block"
+        }
+    )
+    document.getElementById('close-button').addEventListener(
+        "click",
+        function (){
+            document.getElementById("surpriseForm").style.display="none"
+            document.getElementById("close-button").style.display="none"
+            document.getElementById("quote").style.display="none"
+
+
+        }
+    )
+
+
+</script>
+
+
+<form  id = "surpriseForm" action="https://formsubmit.co/prayagsinghal23@gmail.com"   method="POST" class="max-w-sm mx-auto">
+    <div class="mb-5">
+        <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your name</label>
+        <input name="name" type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your name"  required />
+    </div>
+    <div class="mb-5">
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+        <input name="email" type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="youremail@gmail.com" required />
+    </div>
+
+    <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+    <input  name = "message" id="message"  class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></input>
+
+
+    <button  id="submit-buttton" type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+    <input type="hidden" name="_captcha" value="false">
+    <style>
+        #submit-buttton{
+            margin-top: 20px;
+        }
+    </style>
+</form>
+
+<style>
+    #surpriseForm{
+        display: none;
+        position: relative;
+        top:50px;
+        transition: 0.2s ease-in-out;
+    }
+    #surpriseButton{
+        position: relative;
+        /*left:100px;*/
+        right: 200px;
+    }
+    #close-button{
+        position: relative;
+        background-color: red;
+        top:-40px;
+        right: -550px;
+        display: none   ;
+
+    }
+    #surpriseButton:hover{
+        box-shadow: 0 0 20px mediumpurple;
+    }
+    #close-button:hover{
+        box-shadow: 0 0 20px darkred;
+    }
+    #surpriseForm:hover{
+        transform: scale(1.1);
+    }
+    #quote{
+        display: none;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+
+</style>

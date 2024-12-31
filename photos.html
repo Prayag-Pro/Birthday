@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+
+            <img src="balloon.svg" height="50" width="60">
+            <a class="ml-3 text-xl" href="index.html"><b>Happy Birthday Gigi</b></a>
+        </a>
+        <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-gray-900" href="about.html">About Me</a>
+            <a class="mr-5 hover:text-gray-900" href="photos.html">My Life Photos</a>
+            <a class="mr-5 hover:text-gray-900" href="surprise.html">Surprise Page</a>
+            <a class="mr-5 hover:text-gray-900" href="credits.html">Credits !</a>
+        </nav>
+        <button  onclick="location.href='personal.html'" class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Personal Page
+
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+        </button>
+    </div>
+
+</header>
+<hr>
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div  id= "album" class="flex w-full mb-20 flex-wrap">
+            <h1  id= "life_album" class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">My Life Album</h1>
+            <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">Let's have a look at the various photos and pictures of Gungun in the USA and India. <br>"Kabhi hot hai lal, kabhi kanjoosi ka kaam, kabhi toote hai daant, leekin ek hai muskarahat." <br> - Prayag Singhal </p>
+        </div>
+        <style>
+            #album p{
+                transition: 0.3s ease-in-out;
+                font-size: 20px;
+            }
+
+            #life_album{
+                transition: 0.3s ease-in-out;
+                top:30px;
+                font-size: 40px;
+                position: relative;
+                left: 50px;
+            }
+            #album p:hover{
+                transform: scale(1.2);
+            }
+            #life_album:hover{
+                transform: scale(1.2);
+            }
+
+        </style>
+
+        <div class="flex flex-wrap md:-m-2 -m-1">
+            <div class="flex flex-wrap w-1/2">
+                <div class="md:p-2 p-1 w-1/2">
+                    <img  id="las_vegas" alt="gallery" class="w-full object-cover h-full object-center block" src="las_vegas.jpg">
+                </div>
+                <style>
+                    #las_vegas{
+                        transition: 0.2s ease-in-out;
+                    }
+                    #las_vegas:hover{
+                        transform: scale(1.01);
+                        background: pink;
+                        box-shadow: 0 0 100px pink;
+                    }
+                </style>
+
+                <div class="md:p-2 p-1 w-1/2">
+                    <img id="bhai_behen" alt="gallery" class="w-full object-cover h-full object-center block" src="mix_photo.jpg">
+                </div>
+                <style>
+                    #bhai_behen{
+                        transition: 0.2s ease-in-out;
+                    }
+                    #bhai_behen:hover{
+                        transform: scale(1.01);
+                        background: pink;
+                        box-shadow: 0 0 100px pink;
+                    }
+                </style>
+                <div class="md:p-2 p-1 w-full">
+                    <img  id = "grand" alt="gallery" class="w-full h-full object-cover object-center block" src="grand_c.jpg">
+                </div>
+                <style>
+                    #grand{
+                        transition: 0.2s ease-in-out;
+                    }
+                    #grand:hover{
+                        transform: scale(1.01);
+                        background: pink;
+                        box-shadow: 0 0 100px pink;
+                    }
+                </style>
+            </div>
+            <div class="flex flex-wrap w-1/2">
+                <div class="md:p-2 p-1 w-full">
+                    <img alt="gallery" class="w-full h-full object-cover object-center block"  id= "mamma_gigi" src="mama_and_gigi.jpg" >
+                </div>
+                <style>
+                    #mamma_gigi{
+                        height: 601px;
+                        transition: 0.3s ease-in-out;
+                    }
+                    #mamma_gigi:hover{
+                        transform: scale(1.01);
+                        background: pink;
+                        box-shadow: 0 0 100px pink;
+                    }
+                </style>
+                <div class="md:p-2 p-1 w-1/2">
+                    <img id="bench" alt="gallery" class="w-full object-cover h-full object-center block" src="bench.jpg">
+                </div>
+                <style>
+                    #bench{
+                        transition: 0.3s ease-in-out;
+                    }
+                    #bench:hover{
+                        background: pink;
+                        box-shadow: 0 0 100px pink;
+                        transform: scale(1.01);
+                    }
+                </style>
+                <div class="md:p-2 p-1 w-1/2">
+                    <img id="sofa" alt="gallery" class="w-full object-cover h-full object-center block" src="sofa.jpg">
+                    <style>
+                        #sofa{
+                            transition: 0.3s ease-in-out;
+
+                        }
+                        #sofa:hover{
+                            background: pink;
+                            box-shadow: 0 0 100px pink;
+                            transform: scale(1.01);
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
